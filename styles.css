@@ -1,0 +1,518 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #f8f8f8; */
+}
+
+/* general */
+
+h2,
+h4,
+h1,
+p,
+span,
+a {
+  margin: 0;
+  color: #fff;
+}
+
+h2,
+h4,
+h1 {
+  letter-spacing: -3px;
+}
+
+.noselect {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* header */
+
+.carousel-with-header {
+  position: relative;
+  width: 100%;
+}
+
+.header {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 5rem;
+}
+.header .logo {
+  width: 150px;
+}
+.header .logo img {
+  width: 100%;
+}
+
+.header .links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.header .links ul a {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.carousel-container .text {
+  position: absolute;
+  z-index: 9;
+  padding-top: 12rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 91%;
+  margin: 0 90px;
+}
+
+.carousel-container .text .left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.carousel-container .text .left .top {
+}
+.carousel-container .text .left .top h2 {
+  line-height: 3.8rem;
+  font-size: 4.8rem;
+  letter-spacing: -3px;
+}
+.carousel-container .text .left .top p {
+  margin-top: 8px;
+  font-size: 2.3rem;
+}
+.carousel-container .text .left .middle {
+}
+.carousel-container .text .left .middle h2 {
+  font-size: 4.8rem;
+}
+.carousel-container .text .left .middle p {
+  font-size: 2.3rem;
+}
+.carousel-container .text .left .bottom {
+}
+.carousel-container .text .left .bottom .check-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.carousel-container .text .left .bottom .check-text img {
+  width: 25px;
+}
+.carousel-container .text .left .bottom .check-text p {
+  font-size: 1.5rem;
+}
+
+.carousel-container .text .right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.carousel-container .text .right .top {
+}
+.carousel-container .text .right .top .bigger {
+  line-height: 3.8rem;
+  font-size: 6.8rem;
+}
+.carousel-container .text .right .top h2 {
+  line-height: 7rem;
+  font-size: 4.8rem;
+  letter-spacing: -3px;
+}
+.carousel-container .text .right .middle {
+}
+.carousel-container .text .right .middle h2 {
+  font-size: 4.8rem;
+}
+.carousel-container .text .right .middle h4 {
+  letter-spacing: 0px;
+  font-size: 2.3rem;
+  line-height: 30px;
+  font-weight: normal;
+}
+.carousel-container .text .right .bottom {
+}
+.carousel-container .text .right .bottom p {
+  font-style: italic;
+  font-size: 1.56rem;
+}
+.carousel-container .text .right .bottom span {
+  font-size: 1.56rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* carousel */
+
+.carousel-container {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-color: #fff;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex !important;
+  position: relative;
+  justify-content: flex-end;
+  background-color: #fff;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* appointment */
+
+.appointment {
+  background-image: url(assets/img\ 4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.appointment .text {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin: 120px 90px;
+}
+.appointment .text .left {
+  display: block;
+}
+.appointment .text .left .make-appointment {
+  background-color: #0077c1;
+  padding: 1rem 3rem;
+  border-radius: 40px;
+  width: fit-content;
+  border: 2px solid #fff;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+}
+.appointment .text .left .make-appointment h2 {
+  letter-spacing: normal;
+  font-size: 2.5rem;
+}
+.appointment .text .left .lower-text {
+  line-height: 40px;
+  margin-left: 2.5rem;
+}
+.appointment .text .left .lower-text p {
+  font-size: 2.5rem;
+}
+.appointment .text .left .lower-text h4 {
+  font-size: 2.5rem;
+  letter-spacing: normal;
+}
+
+.appointment .text .right {
+}
+.appointment .text .right p {
+  font-size: 2.5rem;
+}
+.appointment .text .right .text-with-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.appointment .text .right .text-with-logo img {
+}
+.appointment .text .right .text-with-logo h4 {
+  font-size: 3rem;
+  letter-spacing: normal;
+}
+
+/* our-services */
+
+.our-services {
+  padding: 3rem 0;
+  background-color: #f3f3f3;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.our-services .big-title-with-star {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-services .big-title-with-star img {
+}
+.our-services .big-title-with-star p {
+  font-size: 4.5rem;
+  color: #0077c1;
+}
+.our-services .big-title-with-star h2 {
+  color: #0077c1;
+  font-size: 6rem;
+  letter-spacing: -5px;
+  margin-bottom: 4rem;
+}
+.our-services .cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.our-services .cards-wrapper .card {
+  position: relative;
+  display: flex;
+  width: 420px;
+  color: #0077c1;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background-color: #fff;
+  flex-direction: column;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+.our-services .cards-wrapper .card .logo {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-services .cards-wrapper .card .logo img {
+  width: 55%;
+}
+.our-services .cards-wrapper .card h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #0077c1;
+  text-align: center;
+  font-size: 2rem;
+}
+.our-services .cards-wrapper .card ul {
+}
+.our-services .cards-wrapper .card ul li {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+/* creators */
+
+.creators {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+.creators .wrapper {
+  padding: 3rem;
+  display: flex;
+  gap: 1rem;
+  width: 85%;
+}
+.creators .wrapper .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.creators .wrapper .left img {
+  width: 100%;
+}
+.creators .wrapper .right {
+  width: 50%;
+}
+.creators .wrapper .right .historia-texto h2 {
+  color: #0077c1;
+  font-weight: normal;
+  letter-spacing: normal;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.creators .wrapper .right .historia-texto p {
+  color: #000;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+}
+
+/* mayor red */
+
+.mayor-red {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8rem;
+  margin-bottom: 8rem;
+}
+
+.mayor-red .big-title-with-star {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mayor-red .big-title-with-star h2 {
+  color: #0077c1;
+  font-size: 6rem;
+  letter-spacing: -5px;
+  line-height: 6rem;
+}
+.mayor-red .big-title-with-star p {
+  font-size: 3.3rem;
+  color: #0077c1;
+}
+.mayor-red .three-images {
+  display: flex;
+  gap: 3rem;
+}
+
+/* sucursales */
+
+.sucursales {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.sucursales .title {
+  line-height: 4rem;
+}
+.sucursales .title h2 {
+  color: #0077c1;
+  font-size: 6rem;
+}
+.sucursales .title p {
+  color: #0077c1;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.sucursales .swiper {
+  width: 90%;
+  position: relative;
+  margin: 5rem 0;
+}
+
+.sucursales .swiper-wrapper {
+  gap: 3rem;
+  padding: 20px;
+}
+
+.sucursales .swiper-slide {
+  background: white;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1.5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  height: 200px;
+}
+
+.sucursales .swiper-slide h3 {
+  color: #0075c9;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.horario {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.horario p {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.horario p img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+.horario strong {
+  font-weight: bold;
+}
+
+.btn-mapa {
+  background-color: #0075c9;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.swiper-button-next {
+  right: 0 !important;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0)
+  );
+}
+.swiper-button-next::after {
+  position: absolute;
+  right: 4px !important;
+}
+.swiper-button-prev::after {
+  position: absolute;
+  left: 10px !important;
+}
+.swiper-button-prev {
+  left: 0 !important;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0)
+  );
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0075c9;
+  padding: 2rem;
+  border-radius: 12px;
+  height: 300px !important;
+  width: 250px !important;
+  top: 0 !important;
+  z-index: 99;
+}
+
+.swiper-wrapper {
+  padding-bottom: 2rem;
+}
