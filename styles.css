@@ -1,9 +1,45 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('assets/fonts/gilroy/Gilroy-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('assets/fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('assets/fonts/gilroy/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('assets/fonts/gilroy/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('assets/fonts/gilroy/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  /* background-color: #f8f8f8; */
+  font-family: 'Gilroy', sans-serif;
 }
 
 /* general */
@@ -16,12 +52,14 @@ span,
 a {
   margin: 0;
   color: #fff;
+  
 }
 
 h2,
 h4,
 h1 {
-  letter-spacing: -3px;
+  /* letter-spacing: -3px; */
+  font-weight: 800;
 }
 
 .noselect {
@@ -204,7 +242,7 @@ h1 {
 }
 .appointment .text .left .make-appointment {
   background-color: #0077c1;
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
   border-radius: 40px;
   width: fit-content;
   border: 2px solid #fff;
@@ -213,14 +251,15 @@ h1 {
 }
 .appointment .text .left .make-appointment h2 {
   letter-spacing: normal;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 .appointment .text .left .lower-text {
   line-height: 40px;
   margin-left: 2.5rem;
 }
 .appointment .text .left .lower-text p {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  font-weight: 200;
 }
 .appointment .text .left .lower-text h4 {
   font-size: 2.5rem;
@@ -231,6 +270,7 @@ h1 {
 }
 .appointment .text .right p {
   font-size: 2.5rem;
+  font-weight: 200;
 }
 .appointment .text .right .text-with-logo {
   display: flex;
@@ -259,6 +299,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 5rem;
 }
 .our-services .big-title-with-star img {
 }
@@ -268,7 +309,7 @@ h1 {
 }
 .our-services .big-title-with-star h2 {
   color: #0077c1;
-  font-size: 6rem;
+  font-size: 6.5rem;
   letter-spacing: -5px;
   margin-bottom: 4rem;
 }
@@ -309,7 +350,7 @@ h1 {
   justify-content: center;
 }
 .our-services .cards-wrapper .card .logo img {
-  width: 55%;
+  width: 45%;
 }
 .our-services .cards-wrapper .card h2 {
   margin-top: 2rem;
@@ -362,7 +403,7 @@ h1 {
 .creators .wrapper .right .historia-texto p {
   color: #000;
   margin-bottom: 2.5rem;
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 /* mayor red */
@@ -564,6 +605,11 @@ h1 {
   object-fit: contain;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
+.ars-grid .bigger {
+  width: 140px;
+  height: 150px;
+  object-fit: fill;
+}
 
 /* footer */
 
@@ -642,6 +688,7 @@ h1 {
   margin-bottom: 5px;
   color: #fff;
   letter-spacing: normal;
+  margin-bottom: 1rem;
 }
 .footer .right-side .locations-flex .left-content p {
   color: #fff;
@@ -652,6 +699,7 @@ h1 {
   margin-bottom: 5px;
   color: #fff;
   letter-spacing: normal;
+  margin-top: 1rem;
 }
 .footer .right-side .locations-flex .right-content p {
   color: #fff;
