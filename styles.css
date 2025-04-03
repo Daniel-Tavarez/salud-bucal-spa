@@ -486,6 +486,16 @@ h1 {
   position: relative;
   margin: 5rem 0;
 }
+.sucursales .swiper .left-fade{
+  position: absolute;
+  z-index: 9;
+  left: -70px;
+}
+.sucursales .swiper .right-fade{
+  position: absolute;
+  right: -120px;
+  z-index: 9;
+}
 
 .sucursales .swiper-wrapper {
   gap: 3rem;
@@ -543,11 +553,6 @@ h1 {
 
 .swiper-button-next {
   right: 0 !important;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0)
-  );
 }
 .swiper-button-next::after {
   position: absolute;
@@ -557,13 +562,8 @@ h1 {
   position: absolute;
   left: 10px !important;
 }
-.swiper-button-prev {
+.swiper-button-prev, .swiper-button-disabled {
   left: 0 !important;
-  background: linear-gradient(
-    to left,
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0)
-  );
 }
 .swiper-button-next,
 .swiper-button-prev {
