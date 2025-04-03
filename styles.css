@@ -162,6 +162,12 @@ h1 {
 .carousel-container .text .right .top .bigger {
   line-height: 3.8rem;
   font-size: 6.8rem;
+  position: relative;
+}
+.carousel-container .text .right .top .bigger img {
+  position: absolute;
+  right: 85px;
+  z-index: -1;
 }
 .carousel-container .text .right .top h2 {
   line-height: 7rem;
@@ -221,7 +227,7 @@ h1 {
 /* appointment */
 
 .appointment {
-  background-image: url(assets/img\ 4.png);
+  background-image: url(assets/img\ 8.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
