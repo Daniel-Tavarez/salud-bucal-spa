@@ -443,6 +443,22 @@ h1 {
   gap: 3rem;
 }
 
+.mayor-red .three-images a{
+  display: flex;
+  gap: 3rem;
+  position: relative;
+}
+.mayor-red .three-images a .banner{
+  
+}
+.mayor-red .three-images a .logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+}
+
 /* sucursales */
 
 .sucursales {
